@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root  'pages#main'
-  get 'testimonials' => 'pages/testimonials'
+  resources :testimonials, only: [:index]
   get 'help' => 'pages#help'
 end
