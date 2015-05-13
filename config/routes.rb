@@ -1,16 +1,4 @@
 Rails.application.routes.draw do
-  get 'compressions/index'
-
-  get 'compressions/show'
-
-  get 'countries/index'
-
-  get 'countries/show'
-
-  get 'satellites/index'
-
-  get 'satellites/show'
-
   root  'pages#main'
   resources :testimonials, only: [:index, :new, :show, :create, :destroy]
   get 'help' => 'pages#help'
