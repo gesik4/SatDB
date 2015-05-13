@@ -62,7 +62,7 @@ rails generate model Memory manufacturer:string volume:float reservation:??? sto
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Полигоны запуска
++ Полигоны запуска
 
 rails generate model Polygon name:string description:text --no-test-framework
 
