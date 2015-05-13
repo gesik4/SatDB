@@ -26,7 +26,7 @@ rails generate model Country name:string descriprion:text --no-test-framework
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Разработчики
++ Разработчики
 
 rails generate model Developer name:string descriprion:text --no-test-framework
 
