@@ -96,6 +96,6 @@ rails generate model Opticalscheme name:string description:text --no-test-framew
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Алгоритмы сжатия
++ Алгоритмы сжатия
 
 rails generate model Compression name:string description:text --no-test-framework
