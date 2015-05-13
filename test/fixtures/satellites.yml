@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acronym: MyString
+  full_name: MyString
+  norad_id: 1
+  nssdc_id: MyString
+
+two:
+  acronym: MyString
+  full_name: MyString
+  norad_id: 1
+  nssdc_id: MyString

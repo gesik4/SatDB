@@ -10,7 +10,9 @@ DATABASE
 
 Космические аппараты
 
-rails generate model Satellite acronym:string full_name:string norad_id:integer nssdc_id:string country:XXX launch:date status:string lifetime:float end_of_life:date polygon:XXX launch_site:XXX launch_venicle:XXX space_agency:XXX developer:XXX platform:XXX operator:XXX mission:XXX the_contracting_spacecraft:XXX mass_at_launch:float mass_dry:float orbit:XXX apogee:float perigee:float inclination:float eccentricity:float period:float max_resolution:XXX payload:XXX power:float cost:float --no-test-framework
+rails generate model Satellite acronym:string full_name:string norad_id:integer nssdc_id:string
+
+country:XXX launch:date status:string lifetime:float end_of_life:date polygon:XXX launch_site:XXX launch_venicle:XXX space_agency:XXX developer:XXX platform:XXX operator:XXX mission:XXX the_contracting_spacecraft:XXX mass_at_launch:float mass_dry:float orbit:XXX apogee:float perigee:float inclination:float eccentricity:float period:float max_resolution:XXX payload:XXX power:float cost:float --no-test-framework
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -20,7 +22,7 @@ rails generate model Operator name:string descriprion:text --no-test-framework
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Страны
++ Страны
 
 rails generate model Country name:string descriprion:text --no-test-framework
 
