@@ -1,28 +1,101 @@
-== README
+AUTHENTICATION
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+login: admin
 
-Things you may want to cover:
+password: U52oxXaBlaAnk7t
 
-* Ruby version
+////////////////////////////////////////////////////////////////////////////////////////////// //////////////////////////////////////////////////////////////////////////////////////////////
 
-* System dependencies
+DATABASE
 
-* Configuration
+Космические аппараты
 
-* Database creation
+rails generate model Satellite acronym:string full_name:string norad_id:integer nssdc_id:string country:XXX launch:date status:string lifetime:float end_of_life:date polygon:XXX launch_site:XXX launch_venicle:XXX space_agency:XXX developer:XXX platform:XXX operator:XXX mission:XXX the_contracting_spacecraft:XXX mass_at_launch:float mass_dry:float orbit:XXX apogee:float perigee:float inclination:float eccentricity:float period:float max_resolution:XXX payload:XXX power:float cost:float --no-test-framework
 
-* Database initialization
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-* How to run the test suite
+Операторы
 
-* Services (job queues, cache servers, search engines, etc.)
+rails generate model Operator name:string descriprion:text --no-test-framework
 
-* Deployment instructions
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-* ...
+Страны
 
+rails generate model Country name:string descriprion:text --no-test-framework
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Разработчики
+
+rails generate model Developer name:string descriprion:text --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Ракетоносители
+
+rails generate model Rocket name:string country:XXX cost:float --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Орбиты
+
+rails generate model Orbit name:string description:text --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Платформы
+
+rails generate model Platrorm name:string manufacturer:string star_detector:XXX mass:float roll_max_deviation_from_nadir:float pitch_max_deviation_from_nadir:float cost: float --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Звездная аппаратура
+
+rails generate model Stardetector manufacturer:string accuracy:float frequency:float cost:float --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Бортовое запоминающее устройство
+
+rails generate model Memory manufacturer:string volume:float reservation:??? storage_life:float throughput:float channel_number:integer lifetime:float cost:float --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Полигоны запуска
+
+rails generate model Polygon name:string description:text --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Радиолинии передачи информации
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Владелец
+
+rails generate model Owner name:string description:text --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Целевая аппаратура
+
+rails generate model Payload name:string channel_number:integer mass_full:float mass_lens:float optical_scheme:XXX MTF_lens_along_the_route:float MTF_lens_across_the_route:float power:float focus:float mirror_diameter:float cost:float compression_algorithm:XXX compression_ratio_min:float compression_ratio_max:float information_flow:float entrance pupil:float type_lens:??? 2beta:float dimensions:text max_resolution:XXX --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Каналы целевой аппаратуры
+
+rails generate model Channels type_channel:string bands_number:integer spectral_range_min:float spectral_range_max:float pixel_projection:float linear_resolution:float resolution_adc:integer --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Оптические схемы
+
+rails generate model Opticalscheme name:string description:text --no-test-framework
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Алгоритмы сжатия
+
+rails generate model Compression name:string description:text --no-test-framework
