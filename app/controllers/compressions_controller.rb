@@ -1,8 +1,8 @@
 class CompressionsController < ApplicationController
   def index
-    @compressions = Compression.all
+    @compressionss = Compression.all
   end
   def show
-    @compressions = Compression.find(params[:id])
+    @compression = Compression.find(params[:id])
   end
 end
