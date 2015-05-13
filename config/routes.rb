@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
-  resources :satellites, only: [:index, :show]
+  resources :satellites, only: [:index, :new, :show, :create]
+  resources :orbits, only: [:index, :show]
 end
