@@ -16,9 +16,7 @@ puts 'Drop satellites...'
 Satellite.delete_all
 puts 'Drop stardetectors...'
 Stardetector.delete_all
-
 mentor = Mentor.find_by_name('qwerchenok')
-
 # create orbits
 puts 'Creating orbits...'
 orbits = Orbit.create!([
@@ -33,7 +31,13 @@ orbits = Orbit.create!([
                              { name: 'Solar orbit', description: 'Orbit around the Sun', mentor: mentor },
                              { name: 'Lunar orbit', description: 'Orbit around the Moon', mentor: mentor },
                          ])
-
+# create compressions
+puts 'Creating compressions...'
+compressions = Compression.create!([
+                                       { name: 'JPEG', mentor: mentor },
+                                       { name: 'ADPCM', mentor: mentor },
+                                       { name: 'JPEG2000', mentor: mentor}
+                                   ])
 # create satellites
 puts 'Creating satellites...'
 satellites = [
@@ -41,6 +45,7 @@ satellites = [
         acronym: 'EgyptSat-2',
         full_name: 'EgyptSat-2',
         orbit: orbits[2],
+        compression: compressions[0],
         norad_id: '39678',
         nssdc_id: '2014-021A'
     },
@@ -48,6 +53,7 @@ satellites = [
         acronym: 'WorldView-3',
         full_name: 'WorldView-3',
         orbit: orbits[0],
+        compression: compressions[1],
         norad_id: '40115',
         nssdc_id: '2014-048A'
     },
@@ -55,9 +61,9 @@ satellites = [
         acronym: 'KOMPSAT-3A',
         full_name: 'Korea Multi-Purpose Satellite - 3A',
         orbit: orbits[0],
+        compression: compressions[2],
         norad_id: '40536',
         nssdc_id: '2015-014A'
     }
 ]
-
 satellites.map { |s| Satellite.create!(s) }

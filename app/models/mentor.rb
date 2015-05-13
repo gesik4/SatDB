@@ -3,5 +3,7 @@ class Mentor < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   validates :password, length: { minimum: 8 }
   has_many :orbits
+  has_many :compressions
   has_many :satellites, through: :orbits
+  has_many :satellites, through: :compressions
 end
