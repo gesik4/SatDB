@@ -7,3 +7,16 @@ h1
 {
   text-align: center;
 }
+* {
+  margin:0;
+}
+
+#footer
+{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: 10%;
+  height: 40px;
+  justify-content: center;
+}
