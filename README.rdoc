@@ -38,7 +38,7 @@ rails generate model Rocket name:string country:XXX cost:float --no-test-framewo
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Орбиты
++ Орбиты
 
 rails generate model Orbit name:string description:text --no-test-framework
 
