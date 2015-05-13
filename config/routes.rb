@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root  'pages#main'
-  resources :testimonials, only: [:index, :new, :show, :create]
+  resources :testimonials, only: [:index, :new, :show, :create, :destroy]
   get 'help' => 'pages#help'
   get 'mentor' => 'mentor#index'
   controller :sessions do
