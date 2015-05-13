@@ -90,7 +90,7 @@ rails generate model Channels type_channel:string bands_number:integer spectral_
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Оптические схемы
++ Оптические схемы
 
 rails generate model Opticalscheme name:string description:text --no-test-framework
 
