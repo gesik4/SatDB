@@ -6,8 +6,6 @@ puts 'Drop developers...'
 Developer.delete_all
 puts 'Drop opticalschemes...'
 Opticalscheme.delete_all
-puts 'Drop opticalschemes...'
-Opticalscheme.delete_all
 puts 'Drop orbits...'
 Orbit.delete_all
 puts 'Drop owners...'
@@ -16,8 +14,6 @@ puts 'Drop polygons...'
 Polygon.delete_all
 puts 'Drop satellites...'
 Satellite.delete_all
-puts 'Drop stardetectors...'
-Stardetector.delete_all
 puts 'Drop stardetectors...'
 Stardetector.delete_all
 

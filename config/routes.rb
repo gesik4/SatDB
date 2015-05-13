@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'countries/index'
+
+  get 'countries/show'
+
   get 'satellites/index'
 
   get 'satellites/show'
@@ -14,4 +18,5 @@ Rails.application.routes.draw do
   end
   resources :satellites, only: [:index, :new, :show, :create]
   resources :orbits, only: [:index, :show]
+  resources :countries, only: [:index, :show]
 end
