@@ -13,10 +13,19 @@ h1
 
 #footer
 {
+  background: rgba(126, 121, 62, 0.34);
   display: flex;
   position: absolute;
   bottom: 0px;
-  width: 10%;
+  width: 100%;
   height: 40px;
-  justify-content: center;
+  justify-content: left;
+}
+
+#footer p
+{
+  dispay:block;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:15px;
 }
