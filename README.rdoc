@@ -72,7 +72,7 @@ rails generate model Polygon name:string description:text --no-test-framework
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Владелец
++ Владелец
 
 rails generate model Owner name:string description:text --no-test-framework
 
