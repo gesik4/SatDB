@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'satellites/index'
+
+  get 'satellites/show'
+
   root  'pages#main'
   resources :testimonials, only: [:index, :new, :show, :create, :destroy]
   get 'help' => 'pages#help'
@@ -8,4 +12,5 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
+  resources :satellites, only: [:index, :show]
 end
