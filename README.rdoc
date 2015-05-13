@@ -50,7 +50,7 @@ rails generate model Platrorm name:string manufacturer:string star_detector:XXX 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Звездная аппаратура
++ Звездная аппаратура
 
 rails generate model Stardetector manufacturer:string accuracy:float frequency:float cost:float --no-test-framework
 
