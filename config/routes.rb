@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resources :countries, only: [:index, :new, :show, :create, :destroy]
   resources :compressions, only: [:index, :new, :show, :create, :destroy]
   resources :agencies, only: [:index, :new, :show, :create, :destroy]
-  resources :testimonials, only: [:index, :new, :show, :create, :destroy]
+  resources :testimonials, only: [:index, :show, :create, :destroy]
 end
