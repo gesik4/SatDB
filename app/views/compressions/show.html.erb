@@ -4,3 +4,9 @@
 <br>
 <br>
 <%= render @compression.satellites%>
+<br>
+<br>
+<% if session[:mentor_id] %>
+    <%= link_to 'delete', @compression, method: :delete, class: 'btn btn-danger',
+                data: { confirm: "You sure?" } %>
+<% end %>

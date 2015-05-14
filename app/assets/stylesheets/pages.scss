@@ -1,8 +1,9 @@
-table {
+table
+{
   border-collapse: collapse;
 }
-
-table th, td, tr {
+table th, td, tr
+{
   border: 1px solid #000;
   background-color:#ccc;
   text-decoration:none;
@@ -15,8 +16,8 @@ table th, td, tr {
   box-sizing: border-box; /* Для IE и Opera */
   text-align: center;
 }
-
-table tbody {
+table tbody
+{
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }

@@ -1,9 +1,7 @@
 <a href="<%= testimonial_path(testimonial) %>" class="list-group-item">
-  <blockquote>
-    <p><%= testimonial.feedback %></p>
-    <footer>
-      <%= testimonial.user_name %>
-      <span><%= time_ago_in_words(testimonial.created_at) %> ago</span>
-    </footer>
-  </blockquote>
+  <p style="margin-top:auto; margin-bottom:auto"><%= testimonial.feedback %></p>
+  <footer>
+    <%= testimonial.user_name %>
+    <span><%= time_ago_in_words(testimonial.created_at) %> ago</span>
+  </footer>
 </a>

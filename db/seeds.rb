@@ -17,6 +17,7 @@ Satellite.delete_all
 puts 'Drop stardetectors...'
 Stardetector.delete_all
 mentor = Mentor.find_by_name('qwerchenok')
+
 # create orbits
 puts 'Creating orbits...'
 orbits = Orbit.create!([
@@ -391,7 +392,7 @@ agencies = [
     {
         acronym: 'SANSA',
         full_name: 'South African National Space Agency ',
-        country: countries[]
+        country: countries[22]
     },
     {
         acronym: 'Skybox',
@@ -451,7 +452,7 @@ agencies = [
     {
         acronym: 'YSDO',
         full_name: 'Yuzhnoye State Design Office ',
-        country: countries[28]
+        country: countries[27]
     }
 ]
 agencies.map { |s| Agency.create!(s) }

@@ -1,1 +1,3 @@
-<%= link_to compression.name, compression_path(compression), class: 'list-group-item' %>
+<a href="<%= compression_path(compression) %>" class="list-group-item">
+  <p style="margin-top:auto; margin-bottom:auto"><%= compression.name %></p>
+</a>

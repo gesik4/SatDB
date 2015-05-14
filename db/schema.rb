@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150514074352) do
+ActiveRecord::Schema.define(version: 20150514084621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agencies", force: :cascade do |t|
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "country_id"
+    t.string   "acronym"
+    t.text     "full_name"
+  end
+
+  add_index "agencies", ["country_id"], name: "index_agencies_on_country_id", using: :btree
 
   create_table "compressions", force: :cascade do |t|
     t.string   "name"
@@ -111,6 +122,7 @@ ActiveRecord::Schema.define(version: 20150514074352) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "agencies", "countries"
   add_foreign_key "compressions", "mentors"
   add_foreign_key "countries", "mentors"
   add_foreign_key "orbits", "mentors"

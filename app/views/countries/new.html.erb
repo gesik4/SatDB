@@ -1,0 +1,28 @@
+<% if @country.errors.any? %>
+    <div class="alert alert-danger">
+      <b><%= pluralize(@country.errors.count, "error") %> on form.</b>
+      <ul>
+        <% @country.errors.full_messages.each do |message| %>
+            <li>* <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+<%= form_for @country, html: {class: 'form-horizontal center'} do |f| %>
+
+    <div class="form-group">
+      <%= f.label :'Name', class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :'Description', class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_area :descriprion, class: 'form-control' %>
+      </div>
+    </div>
+
+    <%= f.submit 'Create country', class: 'btn btn-large btn-primary' %>
+<% end %>

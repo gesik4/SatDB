@@ -1,0 +1,28 @@
+<% if @agency.errors.any? %>
+    <div class="alert alert-danger">
+      <b><%= pluralize(@agency.errors.count, "error") %> on form.</b>
+      <ul>
+        <% @agency.errors.full_messages.each do |message| %>
+            <li>* <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+<%= form_for @agency, html: {class: 'form-horizontal center'} do |f| %>
+
+    <div class="form-group">
+      <%= f.label :'Acronym', class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_field :acronym, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :'Full name', class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_area :full_name, class: 'form-control' %>
+      </div>
+    </div>
+
+    <%= f.submit 'Create agency', class: 'btn btn-large btn-primary' %>
+<% end %>
