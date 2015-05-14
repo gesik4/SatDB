@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'agencies/index'
+
+  get 'agencies/show'
+
   root  'pages#main'
   resources :testimonials, only: [:index, :new, :show, :create, :destroy]
   get 'help' => 'pages#help'
@@ -12,4 +16,5 @@ Rails.application.routes.draw do
   resources :orbits, only: [:index, :show]
   resources :countries, only: [:index, :show]
   resources :compressions, only: [:index, :show]
+  resources :agencies, only: [:index, :show]
 end

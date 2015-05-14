@@ -38,6 +38,75 @@ compressions = Compression.create!([
                                        { name: 'ADPCM', mentor: mentor },
                                        { name: 'JPEG2000', mentor: mentor}
                                    ])
+puts 'Creating countries...'
+countries = Country.create!([
+                                { name: 'Algeria', mentor: mentor },
+                                { name: 'Argentina ', mentor: mentor },
+                                { name: 'Belarus', mentor: mentor },
+                                { name: 'Belgium', mentor: mentor },
+                                { name: 'Brazil', mentor: mentor },
+                                { name: 'Canada', mentor: mentor },
+                                { name: 'Chile', mentor: mentor },
+                                { name: 'China', mentor: mentor },
+                                { name: 'Denmark', mentor: mentor },
+                                { name: 'Egypt', mentor: mentor },
+                                { name: 'France', mentor: mentor },
+                                { name: 'Germany', mentor: mentor },
+                                { name: 'India', mentor: mentor },
+                                { name: 'Israel', mentor: mentor },
+                                { name: 'Italy', mentor: mentor },
+                                { name: 'Japan', mentor: mentor },
+                                { name: 'Kazakhstan', mentor: mentor },
+                                { name: 'Netherlands', mentor: mentor },
+                                { name: 'Nigeria', mentor: mentor },
+                                { name: 'Republic of Korea', mentor: mentor },
+                                { name: 'Russian Federation', mentor: mentor },
+                                { name: 'Singapore', mentor: mentor },
+                                { name: 'South Africa', mentor: mentor },
+                                { name: 'Spain', mentor: mentor },
+                                { name: 'Sweden', mentor: mentor },
+                                { name: 'Switzerland', mentor: mentor },
+                                { name: 'Thailand', mentor: mentor },
+                                { name: 'Turkey', mentor: mentor },
+                                { name: 'Ukraine', mentor: mentor },
+                                { name: 'United Arab Emirates', mentor: mentor },
+                                { name: 'United Kingdom of Great Britain and Northern Ireland', mentor: mentor },
+                                { name: 'United States of America', mentor: mentor },
+                                { name: 'Bolivarian Republic of Venezuela', mentor: mentor },
+                                { name: 'Vietnam', mentor: mentor }
+                            ])
+# create agencies
+puts 'Creating agencies'
+agencies = [
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+    {
+        name: '',
+        country:
+    },
+]
 # create satellites
 puts 'Creating satellites...'
 satellites = [
