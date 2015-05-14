@@ -3,6 +3,25 @@
     <%= link_to 'Add new satellite', new_satellite_path, class: 'btn btn-primary btn-lg' %>
   </div>
 </div>
-<div class="list-group">
-  <%= render @satellites %>
-</div>
+<table>
+  <th>Acronym</th>
+  <th>Full name</th>
+  <th>NORAD ID</th>
+  <th>NSSDC ID</th>
+  <% @satellites.each do |satellite| %>
+      <tr>
+        <td>
+          <%= link_to "#{satellite.acronym}", satellite  %>
+        </td>
+        <td>
+          <%= satellite.full_name %>
+        </td>
+        <td>
+          <%= satellite.norad_id %>
+        </td>
+        <td>
+          <%= satellite.nssdc_id %>
+        </td>
+      </tr>
+  <% end %>
+</table>

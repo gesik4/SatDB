@@ -7,10 +7,10 @@ table th, td, tr
   border: 1px solid #000;
   background-color:#ccc;
   text-decoration:none;
-  padding-top: 2px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 2px;
+  padding-top: 3px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 3px;
   -moz-box-sizing: border-box; /* Для Firefox */
   -webkit-box-sizing: border-box; /* Для Safari и Chrome */
   box-sizing: border-box; /* Для IE и Opera */
@@ -20,4 +20,5 @@ table tbody
 {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  text-align: center;
 }
