@@ -79,34 +79,382 @@ countries = Country.create!([
 puts 'Creating agencies'
 agencies = [
     {
-        name: '',
-        country:
+        acronym: 'ABAE',
+        full_name: 'Agencia Bolivariana para Actividades Espaciales',
+        country: countries[32]
     },
     {
-        name: '',
-        country:
+        acronym: 'ACE',
+        full_name: 'Agencia Chilena del Espacio',
+        country: countries[6]
     },
     {
-        name: '',
-        country:
+        acronym: 'AFRL',
+        full_name: 'Air Force Research Laboratory ',
+        country: countries[31]
     },
     {
-        name: '',
-        country:
+        acronym: 'ASAL',
+        full_name: 'Agence Spatial Algerienne',
+        country: countries[0]
     },
     {
-        name: '',
-        country:
+        acronym: 'ASI',
+        full_name: 'Agenzia Spaziale Italiana',
+        country: countries[14]
     },
     {
-        name: '',
-        country:
+        acronym: 'BIRA',
+        full_name: 'Belgisch Instituut voor Ruimte-Aëronomie',
+        country: countries[3]
     },
     {
-        name: '',
-        country:
+        acronym: 'BNSC',
+        full_name: 'British National Space Council',
+        country: countries[30]
     },
+    {
+        acronym: 'CAST',
+        full_name: 'Chinese Academy of Science and Technology ',
+        country: countries[7]
+    },
+    {
+        acronym: 'CDTI',
+        full_name: 'Centro para el Desarrollo Tecnológico Industrial',
+        country: countries[23]
+    },
+    {
+        acronym: 'CMA',
+        full_name: 'China Meteorological Administration',
+        country: countries[7]
+    },
+    {
+        acronym: 'CNES',
+        full_name: 'Centre National d''Etudes Spatiales',
+        country: countries[10]
+    },
+    {
+        acronym: 'CNSA',
+        full_name: 'China National Space Administration',
+        country: countries[7]
+    },
+    {
+        acronym: 'CONAE',
+        full_name: 'Comisión Nacional de Actividades Espaciales ',
+        country: countries[1]
+    },
+    {
+        acronym: 'CRESDA',
+        full_name: 'China Center for Resources Satellite Data and Application',
+        country: countries[7]
+    },
+    {
+        acronym: 'CSA',
+        full_name: 'Canadian Space Agency',
+        country: countries[5]
+    },
+    {
+        acronym: 'DigitalGlobe',
+        full_name: 'DigitalGlobe',
+        country: countries[31]
+    },
+    {
+        acronym: 'DLR',
+        full_name: 'Deutsches Zentrum für Luft- und Raumfahrt',
+        country: countries[11]
+    },
+    {
+        acronym: 'DNSC',
+        full_name: 'Danish National Space Center',
+        country: countries[8]
+    },
+    {
+        acronym: 'DoD',
+        full_name: 'Department of Defense',
+        country: countries[31]
+    },
+    {
+        acronym: 'EC',
+        full_name: 'European Commission',
+        country: nil
+    },
+    {
+        acronym: 'EIAST',
+        full_name: 'Emirates Institution for Advanced Science and Technology',
+        country: countries[29]
+    },
+    {
+        acronym: 'Elecnor Deimos',
+        full_name: 'Elecnor Deimos',
+        country: countries[23]
+    },
+    {
+        acronym: 'ESA',
+        full_name: 'European Space Agency',
+        country: nil
+    },
+    {
+        acronym: 'EUMETSAT',
+        full_name: 'European Organisation for the Exploitation of Meteorological Satellites',
+        country: nil
+    },
+    {
+        acronym: 'GeoEye',
+        full_name: 'GeoEye',
+        country: countries[31]
+    },
+    {
+        acronym: 'ISTDA',
+        full_name: 'Geo-Informatics and Space Technology Development Agency',
+        country: countries[26]
+    },
+    {
+        acronym: 'IMD',
+        full_name: 'India Meteorological Department',
+        country: countries[12]
+    },
+    {
+        acronym: 'INPE',
+        full_name: 'Instituto Nacional de Pesquisas Espaciais',
+        country: countries[4]
+    },
+    {
+        acronym: 'ISA',
+        full_name: 'Israel Space Agency',
+        country: countries[13]
+    },
+    {
+        acronym: 'ISRO',
+        full_name: 'Indian Space Research Organisation',
+        country: countries[12]
+    },
+    {
+        acronym: 'JAXA',
+        full_name: 'Japan Aerospace Exploration Agency',
+        country: countries[15]
+    },
+    {
+        acronym: 'JCAB',
+        full_name: 'Japanese Civil Aviation Bureau',
+        country: countries[15]
+    },
+    {
+        acronym: 'JMA',
+        full_name: 'Japan Meteorological Agency',
+        country: countries[15]
+    },
+    {
+        acronym: 'KARI',
+        full_name: 'Korea Aerospace Research Institute',
+        country: countries[19]
+    },
+    {
+        acronym: 'Kazcosmos',
+        full_name: 'Kazakhstan National Space Agency ',
+        country: countries[16]
+    },
+    {
+        acronym: 'KIOST',
+        full_name: 'Korea Institute of Ocean Science & Technology',
+        country: countries[19]
+    },
+    {
+        acronym: 'KMA',
+        full_name: 'Korea Meteorological Administration ',
+        country: countries[19]
+    },
+    {
+        acronym: 'KORDI',
+        full_name: 'Korean Ocean Research and Development Institute now renamed Korea Institute for Ocean Science and Technology (KIOST)',
+        country: countries[19]
+    },
+    {
+        acronym: 'MDE',
+        full_name: 'Ministerio de Defensa',
+        country: countries[23]
+    },
+    {
+        acronym: 'ME',
+        full_name: 'Ministry of Ennvironment',
+        country: countries[19]
+    },
+    {
+        acronym: 'METI',
+        full_name: 'Ministry of Economy, Trade and Industry',
+        country: countries[15]
+    },
+    {
+        acronym: 'MLTM',
+        full_name: 'Ministry of Land, Transport and Maritime Affairs',
+        country: countries[19]
+    },
+    {
+        acronym: 'MOE',
+        full_name: 'Ministry of the Environment',
+        country: countries[15]
+    },
+    {
+        acronym: 'NARSS',
+        full_name: 'National Authority for Remote Sensing and Space Science',
+        country: countries[9]
+    },
+    {
+        acronym: 'NASA',
+        full_name: 'National Aeronautics and Space Administration',
+        country: countries[31]
+    },
+    {
+        acronym: 'NASDA',
+        full_name: 'National Space Development Agency',
+        country: countries[15]
+    },
+    {
+        acronym: 'NASRDA',
+        full_name: 'National Space Research and Development Agency',
+        country: countries[18]
+    },
+    {
+        acronym: 'NEC',
+        full_name: 'Nippon Electric Company',
+        country: countries[15]
+    },
+    {
+        acronym: 'NIVR',
+        full_name: 'Netherlands Agency for Aerospace Programmes',
+        country: countries[17]
+    },
+    {
+        acronym: 'NOAA',
+        full_name: 'National Oceanic and Atmospheric Administration',
+        country: countries[31]
+    },
+    {
+        acronym: 'NPOMash',
+        full_name: 'NPO Mashinostroyenia ',
+        country: countries[20]
+    },
+    {
+        acronym: 'NRL',
+        full_name: 'Naval Reasearch Laboratory',
+        country: countries[31]
+    },
+    {
+        acronym: 'NRSCC',
+        full_name: 'National Remote Sensing Center of China',
+        country: countries[7]
+    },
+    {
+        acronym: 'NSAU',
+        full_name: 'National Space Agency of Ukraine',
+        country: countries[28]
+    },
+    {
+        acronym: 'NSO',
+        full_name: 'Netherlands Space Office',
+        country: countries[17]
+    },
+    {
+        acronym: 'NSOAS',
+        full_name: 'National Satellite Ocean Application Service',
+        country: countries[7]
+    },
+    {
+        acronym: 'NSPO',
+        full_name: 'National Space Organization of Taiwan',
+        country: countries[7]
+    },
+    {
+        acronym: 'NTU',
+        full_name: 'Nanyang Technological University',
+        country: countries[21]
+    },
+    {
+        acronym: 'PLA',
+        full_name: 'People’s Liberation Army',
+        country: countries[7]
+    },
+    {
+        acronym: 'RapidEye',
+        full_name: 'RapidEye AG',
+        country: countries[11]
+    },
+    {
+        acronym: 'Roscosmos',
+        full_name: 'Russian Federal Space Agency',
+        country: countries[20]
+    },
+    {
+        acronym: 'RosHydroMet',
+        full_name: 'Russian Federal Service for Hydrometorology and Environmental Monitoring',
+        country: countries[20]
+    },
+    {
+        acronym: 'SANSA',
+        full_name: 'South African National Space Agency ',
+        country: countries[]
+    },
+    {
+        acronym: 'Skybox',
+        full_name: 'Skybox Imaging Inc.',
+        country: countries[31]
+    },
+    {
+        acronym: 'SNSB',
+        full_name: 'Swedish National Space Board',
+        country: countries[24]
+    },
+    {
+        acronym: 'Spot Image',
+        full_name: 'Spot Image',
+        country: countries[10]
+    },
+    {
+        acronym: 'SSO',
+        full_name: 'Swiss Space Office',
+        country: countries[25]
+    },
+    {
+        acronym: 'STI-VAST',
+        full_name: 'Space Technology Institute-Vietnam Academy of Science and Technology',
+        country: countries[33]
+    },
+    {
+        acronym: 'TÜBITAK-BILTEN',
+        full_name: 'Bilgi Teknolojileri ve Elektronik. Araştırma Enstitüsü - BÜLTEN',
+        country: countries[27]
+    },
+    {
+        acronym: 'TÜBITAK-UZAY',
+        full_name: 'Scientific and Technological Research Council of Turkey - Space Technologies Research Institute',
+        country: countries[27]
+    },
+    {
+        acronym: 'UCAR',
+        full_name: 'University Corporation for Atmospheric Research ',
+        country: countries[31]
+    },
+    {
+        acronym: 'USAF',
+        full_name: 'United States Air Force',
+        country: countries[31]
+    },
+    {
+        acronym: 'USEF',
+        full_name: 'Institute for Unmanned Space Experiment Free Flyer',
+        country: countries[15]
+    },
+    {
+        acronym: 'USGS',
+        full_name: 'United States Geological Survey ',
+        country: countries[31]
+    },
+    {
+        acronym: 'YSDO',
+        full_name: 'Yuzhnoye State Design Office ',
+        country: countries[28]
+    }
 ]
+agencies.map { |s| Agency.create!(s) }
 # create satellites
 puts 'Creating satellites...'
 satellites = [
