@@ -4,5 +4,6 @@ class MentorController < ApplicationController
     @mentor = Mentor.find_by(id: session[:mentor_id])
     @orbits = @mentor.orbits
     @compressions = @mentor.compressions
+    @countries = @mentor.countries
   end
 end
