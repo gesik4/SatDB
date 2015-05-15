@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150514074352) do
+ActiveRecord::Schema.define(version: 20150515080620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 20150514074352) do
     t.string   "norad_id"
     t.integer  "orbit_id"
     t.integer  "compression_id"
+    t.datetime "launch_date"
   end
 
   add_index "satellites", ["compression_id"], name: "index_satellites_on_compression_id", using: :btree
