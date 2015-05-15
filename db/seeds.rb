@@ -464,175 +464,488 @@ satellites = [
     {
         acronym: 'EgyptSat-2',
         full_name: 'EgyptSat-2',
-        orbit: orbits[2],
-        compression: compressions[0],
+        orbit: nil,
+        compression: nil,
         norad_id: '39678',
-        nssdc_id: '2014-021A'
+        nssdc_id: '2014-021A',
+        launch_date: '2014-3-16 16:20:00 UTC'
     },
     {
         acronym: 'WorldView-3',
         full_name: 'WorldView-3',
-        orbit: orbits[0],
-        compression: compressions[1],
+        orbit: nil,
+        compression: nil,
         norad_id: '40115',
-        nssdc_id: '2014-048A'
+        nssdc_id: '2014-048A',
+        launch_date: '2014-8-13 18:30:30 UTC'
     },
    {
         acronym: 'KOMPSAT-3A',
         full_name: 'Korea Multi-Purpose Satellite - 3A',
-        orbit: orbits[0],
-        compression: compressions[2],
+        orbit: nil,
+        compression: nil,
         norad_id: '40536',
-        nssdc_id: '2015-014A'
+        nssdc_id: '2015-014A',
+        launch_date: '2015-3-25 22:08:53 UTC'
     },
     {
         acronym: 'Kanopus-V1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '38707',
+        nssdc_id: '2012-039A',
+        launch_date: '2012-7-22 06:41:39 UTC'
     },
     {
         acronym: 'Resurs-DK1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '29228',
+        nssdc_id: '2006-021A',
+        launch_date: '2006-6-15 08:00:00 UTC'
     },
     {
         acronym: 'Resurs-P1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '39186',
+        nssdc_id: '2013-030A',
+        launch_date: '2013-6-25 17:28:48 UTC'
     },
     {
-        acronym: 'BKA',
+        acronym: 'BKA-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '38708',
+        nssdc_id: '2012-039B',
+        launch_date: '2012-7-22 06:41:39 UTC'
     },
     {
         acronym: 'Sich-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '37794',
+        nssdc_id: '2011-044G',
+        launch_date: '2011-08-17 07:12:30 UTC'
     },
     {
         acronym: 'RapidEye-1',
+        full_name: 'RapidEye 1 - Tachys',
+        orbit: nil,
+        compression: nil,
+        norad_id: '33314',
+        nssdc_id: '2008-040C',
+        launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
         acronym: 'RapidEye-2',
+        full_name: 'RapidEye 2 - Mati',
+        orbit: nil,
+        compression: nil,
+        norad_id: '33312',
+        nssdc_id: '2008-040A',
+        launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
         acronym: 'RapidEye-3',
+        full_name: 'RapidEye 3 - Choma',
+        orbit: nil,
+        compression: nil,
+        norad_id: '33315',
+        nssdc_id: '2008-040D',
+        launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
         acronym: 'RapidEye-4',
+        full_name: 'RapidEye 4 - Choros',
+        orbit: nil,
+        compression: nil,
+        norad_id: '33316',
+        nssdc_id: '2008-040E',
+        launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
         acronym: 'RapidEye-5',
+        full_name: 'RapidEye 5 - Trochia',
+        orbit: nil,
+        compression: nil,
+        norad_id: '33313',
+        nssdc_id: '2008-040B',
+        launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
         acronym: 'Cartosat-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '28649',
+        nssdc_id: '2005-017A',
+        launch_date: '2005-05-05 04:45:00 UTC'
     },
     {
-        acronym: 'Cartosat-2',
+        acronym: 'Cartosat-2AT',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '29710',
+        nssdc_id: '2007-001B',
+        launch_date: '2007-01-10 03:53:00 UTC'
     },
     {
         acronym: 'Cartosat-2B',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '36795',
+        nssdc_id: '2010-035A',
+        launch_date: '2010-07-12 03:53:00 UTC'
     },
     {
         acronym: 'Resourcesat-1',
+        full_name: 'Indian Remote-Sensing Satellite-P6',
+        orbit: nil,
+        compression: nil,
+        norad_id: '28051',
+        nssdc_id: '2003-046A',
+        launch_date: '2003-10-17 04:54:00 UTC'
     },
     {
         acronym: 'Resourcesat-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '37387',
+        nssdc_id: '2011-015A',
+        launch_date: '2011-04-20 04:42:00 UTC'
     },
     {
-        acronym: 'TH-1',
+        acronym: 'TH-1A',
+        full_name: 'Tianhui 1A',
+        orbit: nil,
+        compression: nil,
+        norad_id: '36985',
+        nssdc_id: '2010-040A',
+        launch_date: '2010-08-24 07:10:00 UTC'
     },
     {
-        acronym: 'TH-2',
+        acronym: 'TH-1B',
+        full_name: 'Tianhui 1B',
+        orbit: nil,
+        compression: nil,
+        norad_id: '38256',
+        nssdc_id: '2012-020A',
+        launch_date: '2012-05-06 07:10:04 UTC'
     },
     {
         acronym: 'Kompsat-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '29268',
+        nssdc_id: '2006-031A',
+        launch_date: '2006-07-28 07:05:43 UTC'
     },
     {
         acronym: 'Kompsat-3',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '38338',
+        nssdc_id: '2012-025B',
+        launch_date: '2012-05-17 16:39:00 UTC'
     },
     {
         acronym: 'Deimos-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '40013',
+        nssdc_id: '2014-033D',
+        launch_date: '2014-06-19 19:11 UTC'
     },
     {
-        acronym: 'QuickBird',
+        acronym: 'QuickBird-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '26617',
+        nssdc_id: '2000-074A',
+        launch_date: '2000-11-20 23:00:00 UTC'
+    },
+    {
+        acronym: 'QuickBird-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '26953',
+        nssdc_id: '2001-047A',
+        launch_date: '2001-10-18 18:51:00 UTC'
     },
     {
         acronym: 'WorldView-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '32060',
+        nssdc_id: '2007-041A',
+        launch_date: '2007-09-18 18:35:00 UTC'
     },
     {
         acronym: 'WorldView-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '35946',
+        nssdc_id: '2009-055A',
+        launch_date: '2009-10-08 18:51:01 UTC'
     },
     {
         acronym: 'GeoEye-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '33331',
+        nssdc_id: '2008-042A',
+        launch_date: '2008-09-06 18:50:57 UTC'
     },
     {
-        acronym: 'Ikonos',
+        acronym: 'Ikonos-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: nil,
+        nssdc_id: 'F990427A',
+        launch_date: '1999-04-27 18:22:00 UTC'
     },
     {
-        acronym: 'GeoEye-2',
+        acronym: 'Ikonos-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '25919',
+        nssdc_id: '1999-051A',
+        launch_date: '1999-09-24 18:21:00 UTC'
+    },
+    {
+        acronym: 'WorldView-4',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: nil,
+        nssdc_id: nil,
+        launch_date: nil
     },
     {
         acronym: 'Aqua',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '27424',
+        nssdc_id: '2002-022A',
+        launch_date: '2002-05-04 09:54:58 UTC'
     },
     {
         acronym: 'EO-1',
         full_name: 'Earth Observing - 1',
+        orbit: nil,
+        compression: nil,
+        norad_id: '26619',
+        nssdc_id: '2000-075A',
+        launch_date: '2000-11-21 18:24:25 UTC'
     },
     {
         acronym: 'Landsat-7',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '25682',
+        nssdc_id: '1999-020A',
+        launch_date: '1999-04-15 18:32:00 UTC'
     },
     {
         acronym: 'Soumi NPP',
         full_name: 'Suomi NPOESS Preparatory Project',
+        orbit: nil,
+        compression: nil,
+        norad_id: '37849',
+        nssdc_id: '2011-061A',
+        launch_date: '2011-10-28 09:48:00 UTC'
     },
     {
         acronym: 'Terra',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '25994',
+        nssdc_id: '1999-068A',
+        launch_date: '1999-12-18 18:57:39 UTC'
     },
     {
         acronym: 'Landsat-8',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '39084',
+        nssdc_id: '2013-008A',
+        launch_date: '2013-02-11 18:02:00 UTC'
     },
     {
         acronym: 'SkySat-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '39418',
+        nssdc_id: '2013-066C',
+        launch_date: '2013-11-21 07:25:48 UTC '
     },
     {
         acronym: 'SkySat-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '40072',
+        nssdc_id: '2014-037D',
+        launch_date: '2014-07-08 15:58:28 UTC'
     },
     {
         acronym: 'Pleiades-1A',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '38012',
+        nssdc_id: '2011-076F',
+        launch_date: '2011-12-17 02:03:00 UTC'
     },
     {
         acronym: 'Pleiades-1B',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '39019',
+        nssdc_id: '2012-068A',
+        launch_date: '2012-12-02 02:02:00 UTC'
     },
     {
         acronym: 'Alos',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '28931',
+        nssdc_id: '2006-002A',
+        launch_date: '2006-01-24 01:33:00 UTC'
     },
     {
         acronym: 'Alos-3',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: nil,
+        nssdc_id: nil,
+        launch_date: nil
     },
     {
         acronym: 'Asnaro',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '40298',
+        nssdc_id: '2014-070A',
+        launch_date: '2014-11-06 07:35:49 UTC'
     },
     {
         acronym: 'Alsat-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '27559',
+        nssdc_id: '2002-054A',
+        launch_date: '2002-11-28 06:07:00 UTC'
     },
     {
-        acronym: 'Bejing-1',
+        acronym: 'Beijing-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '28890',
+        nssdc_id: '2005-043A',
+        launch_date: '2005-10-27 6:52:00 UTC'
     },
     {
         acronym: 'Bilsat-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '27943',
+        nssdc_id: '2003-042E',
+        launch_date: '2003-09-27 06:12:00 UTC'
     },
     {
         acronym: 'Deimos-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '35681',
+        nssdc_id: '2009-041A',
+        launch_date: '2009-07-29 18:46:00 UTC'
     },
     {
         acronym: 'Nigeriasat-1',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '27941',
+        nssdc_id: '2003-042C',
+        launch_date: '2003-09-27 06:12:00 UTC'
     },
     {
         acronym: 'Nigeriasat-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '37789',
+        nssdc_id: '2011-044B',
+        launch_date: '2011-08-17 07:12:20 UTC'
     },
     {
         acronym: 'Nigeriasat-X',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '37790',
+        nssdc_id: '2011-044C',
+        launch_date: '2011-08-17 07:12:20 UTC'
     },
     {
         acronym: 'UK-DMC',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '27942',
+        nssdc_id: '2003-042D',
+        launch_date: '2003-09-27 06:11:44 UTC'
     },
     {
         acronym: 'UK-DMC-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: '35683',
+        nssdc_id: '2009-041C',
+        launch_date: '2009-07-29 18:46:29 UTC'
     },
     {
         acronym: 'Sentinel-2',
+        full_name: nil,
+        orbit: nil,
+        compression: nil,
+        norad_id: nil,
+        nssdc_id: nil,
+        launch_date: nil
     }
 ]
 satellites.map { |s| Satellite.create!(s) }

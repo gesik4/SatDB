@@ -5,22 +5,14 @@
 </div>
 <table>
   <th>Acronym</th>
-  <th>Full name</th>
-  <th>NORAD ID</th>
-  <th>NSSDC ID</th>
+  <th>Launch Date</th>
   <% @satellites.each do |satellite| %>
       <tr>
         <td>
           <%= link_to "#{satellite.acronym}", satellite  %>
         </td>
         <td>
-          <%= satellite.full_name %>
-        </td>
-        <td>
-          <%= satellite.norad_id %>
-        </td>
-        <td>
-          <%= satellite.nssdc_id %>
+          <%= satellite.launch_date %>
         </td>
       </tr>
   <% end %>

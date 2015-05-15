@@ -2,7 +2,7 @@ class SatellitesController < ApplicationController
   before_action :authorize, only: :destroy
   def index
     @satellites = Satellite.all
-    @satellites = @satellites.order(:acronym)
+    @satellites = @satellites.order(:launch_date).order(:acronym)
   end
   def new
     @satellite = Satellite.new

@@ -5,11 +5,22 @@
       <th>Full name</th>
       <th>NORAD ID</th>
       <th>NSSDC ID</th>
+      <th>Launch date</th>
     </tr>
     <tr>
-      <td><%= @satellite.full_name %></td>
-      <td><%= @satellite.norad_id %></td>
-      <td><%= @satellite.nssdc_id %></td>
+      <td>
+        <%= @satellite.full_name %>
+      </td>
+      <td>
+        <%= @satellite.norad_id %>
+      </td>
+      <td>
+        <%= link_to @satellite.nssdc_id, "http://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=#{@satellite.nssdc_id}", :target => "_blank" %>
+      </td>
+      <td>
+        <%= @satellite.launch_date.day %> <%= @satellite.launch_date.strftime("%B") %>
+        <%= @satellite.launch_date.year %> (<%= @satellite.launch_date.hour %>:<%= @satellite.launch_date.min %> UTC)
+      </td>
     </tr>
   </table>
 </div>
