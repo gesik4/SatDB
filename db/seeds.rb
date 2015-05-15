@@ -18,6 +18,8 @@ puts 'Drop stardetectors...'
 Stardetector.delete_all
 mentor = Mentor.find_by_name('qwerchenok')
 
+Mentor.create(name: 'admin', password: 'U52oxXaBlaAnk7t')
+
 # create orbits
 puts 'Creating orbits...'
 orbits = Orbit.create!([
@@ -475,13 +477,162 @@ satellites = [
         norad_id: '40115',
         nssdc_id: '2014-048A'
     },
-    {
+   {
         acronym: 'KOMPSAT-3A',
         full_name: 'Korea Multi-Purpose Satellite - 3A',
         orbit: orbits[0],
         compression: compressions[2],
         norad_id: '40536',
         nssdc_id: '2015-014A'
+    },
+    {
+        acronym: 'Kanopus-V1',
+    },
+    {
+        acronym: 'Resurs-DK1',
+    },
+    {
+        acronym: 'Resurs-P1',
+    },
+    {
+        acronym: 'BKA',
+    },
+    {
+        acronym: 'Sich-2',
+    },
+    {
+        acronym: 'RapidEye-1',
+    },
+    {
+        acronym: 'RapidEye-2',
+    },
+    {
+        acronym: 'RapidEye-3',
+    },
+    {
+        acronym: 'RapidEye-4',
+    },
+    {
+        acronym: 'RapidEye-5',
+    },
+    {
+        acronym: 'Cartosat-1',
+    },
+    {
+        acronym: 'Cartosat-2',
+    },
+    {
+        acronym: 'Cartosat-2B',
+    },
+    {
+        acronym: 'Resourcesat-1',
+    },
+    {
+        acronym: 'Resourcesat-2',
+    },
+    {
+        acronym: 'TH-1',
+    },
+    {
+        acronym: 'TH-2',
+    },
+    {
+        acronym: 'Kompsat-2',
+    },
+    {
+        acronym: 'Kompsat-3',
+    },
+    {
+        acronym: 'Deimos-2',
+    },
+    {
+        acronym: 'QuickBird',
+    },
+    {
+        acronym: 'WorldView-1',
+    },
+    {
+        acronym: 'WorldView-2',
+    },
+    {
+        acronym: 'GeoEye-1',
+    },
+    {
+        acronym: 'Ikonos',
+    },
+    {
+        acronym: 'GeoEye-2',
+    },
+    {
+        acronym: 'Aqua',
+    },
+    {
+        acronym: 'EO-1',
+        full_name: 'Earth Observing - 1',
+    },
+    {
+        acronym: 'Landsat-7',
+    },
+    {
+        acronym: 'Soumi NPP',
+        full_name: 'Suomi NPOESS Preparatory Project',
+    },
+    {
+        acronym: 'Terra',
+    },
+    {
+        acronym: 'Landsat-8',
+    },
+    {
+        acronym: 'SkySat-1',
+    },
+    {
+        acronym: 'SkySat-2',
+    },
+    {
+        acronym: 'Pleiades-1A',
+    },
+    {
+        acronym: 'Pleiades-1B',
+    },
+    {
+        acronym: 'Alos',
+    },
+    {
+        acronym: 'Alos-3',
+    },
+    {
+        acronym: 'Asnaro',
+    },
+    {
+        acronym: 'Alsat-1',
+    },
+    {
+        acronym: 'Bejing-1',
+    },
+    {
+        acronym: 'Bilsat-1',
+    },
+    {
+        acronym: 'Deimos-1',
+    },
+    {
+        acronym: 'Nigeriasat-1',
+    },
+    {
+        acronym: 'Nigeriasat-2',
+    },
+    {
+        acronym: 'Nigeriasat-X',
+    },
+    {
+        acronym: 'UK-DMC',
+    },
+    {
+        acronym: 'UK-DMC-2',
+    },
+    {
+        acronym: 'Sentinel-2',
     }
 ]
 satellites.map { |s| Satellite.create!(s) }
