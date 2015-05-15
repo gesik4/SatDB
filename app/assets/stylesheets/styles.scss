@@ -1,9 +1,5 @@
 @import 'bootstrap';
 @import "bootstrap-sprockets";
-* {
-  margin: 0;
-  padding: 0;
-}
 h1
 {
   color: green;
@@ -36,48 +32,24 @@ footer
   position: absolute;
   left: 0;
   bottom: 0;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
 }
-
 footer p
 {
   margin-top:auto;
   margin-bottom:auto;
   margin-left:15px;
 }
-
-/* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-}
-
-footer a {
+footer a
+{
   color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
 }
 .list-group
 {
-  text-align: center !important;
+  text-align: center;
 }
 .list-group-item
 {
@@ -85,6 +57,6 @@ footer ul li {
 }
 a.list-group-item
 {
-  display: inline-block !important;
-  text-align: center !important;
+  display: inline-block;
+  text-align: center;
 }
