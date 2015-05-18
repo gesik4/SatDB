@@ -6,6 +6,8 @@
       <th>NORAD ID</th>
       <th>NSSDC ID</th>
       <th>Launch date</th>
+      <th>Dry mass, kg</th>
+      <th>Mass at launch, kg</th>
     </tr>
     <tr>
       <td>
@@ -20,6 +22,12 @@
       <td>
         <%= @satellite.launch_date.day %> <%= @satellite.launch_date.strftime("%B") %>
         <%= @satellite.launch_date.year %> (<%= @satellite.launch_date.hour %>:<%= @satellite.launch_date.min %> UTC)
+      </td>
+      <td>
+        <%= @satellite.mass_dry_before_type_cast %>
+      </td>
+      <td>
+        <%= @satellite.mass_at_launch_before_type_cast %>
       </td>
     </tr>
   </table>
