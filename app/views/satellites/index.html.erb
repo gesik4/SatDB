@@ -6,7 +6,9 @@
 <table>
   <th>Acronym</th>
   <th>Launch Date</th>
+  <th>Inclination, deg</th>
   <th>Dry mass, kg</th>
+  <th>Power, W</th>
   <% @satellites.each do |satellite| %>
       <tr>
         <td>
@@ -16,7 +18,13 @@
           <%= satellite.launch_date_before_type_cast %>
         </td>
         <td>
+          <%= satellite.inclination_before_type_cast %>
+        </td>
+        <td>
           <%= satellite.mass_dry_before_type_cast %>
+        </td>
+        <td>
+          <%= satellite.power_before_type_cast %>
         </td>
       </tr>
   <% end %>

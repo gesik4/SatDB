@@ -6,15 +6,17 @@
       <th>NORAD ID</th>
       <th>NSSDC ID</th>
       <th>Launch date</th>
+      <th>Inclination, deg</th>
       <th>Dry mass, kg</th>
       <th>Mass at launch, kg</th>
+      <th>Power, W</th>
     </tr>
     <tr>
       <td>
         <%= @satellite.full_name %>
       </td>
       <td>
-        <%= @satellite.norad_id %>
+        <%= link_to @satellite.norad_id, "http://www.n2yo.com/satellite/?s=#{@satellite.norad_id}", :target => "_blank" %>
       </td>
       <td>
         <%= link_to @satellite.nssdc_id, "http://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=#{@satellite.nssdc_id}", :target => "_blank" %>
@@ -24,10 +26,16 @@
         <%= @satellite.launch_date.year %> (<%= @satellite.launch_date.hour %>:<%= @satellite.launch_date.min %> UTC)
       </td>
       <td>
+        <%= @satellite.inclination_before_type_cast %>
+      </td>
+      <td>
         <%= @satellite.mass_dry_before_type_cast %>
       </td>
       <td>
         <%= @satellite.mass_at_launch_before_type_cast %>
+      </td>
+      <td>
+        <%= @satellite.power_before_type_cast %>
       </td>
     </tr>
   </table>
