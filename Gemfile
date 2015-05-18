@@ -32,6 +32,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'responders', '~> 2.0'
 
+gem 'nokogiri'
+
 group :development, :test do
   gem 'byebug'
 
