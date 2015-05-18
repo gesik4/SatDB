@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150518082036) do
+ActiveRecord::Schema.define(version: 20150518085037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -105,6 +105,7 @@ ActiveRecord::Schema.define(version: 20150518082036) do
     t.float    "mass_dry"
     t.float    "mass_at_launch"
     t.float    "inclination"
+    t.float    "power"
   end
 
   add_index "satellites", ["compression_id"], name: "index_satellites_on_compression_id", using: :btree
