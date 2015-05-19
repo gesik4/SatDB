@@ -16,7 +16,7 @@ country:XXX launch:date status:string lifetime:float end_of_life:date polygon:XX
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-Операторы
++ Операторы
 
 rails generate model Operator name:string descriprion:text --no-test-framework
 
@@ -60,7 +60,7 @@ rails generate model Stardetector manufacturer:string accuracy:float frequency:f
 
 Бортовое запоминающее устройство
 
-rails generate model Memory manufacturer:string volume:float reservation:??? storage_life:float throughput:float channel_number:integer lifetime:float cost:float --no-test-framework
+rails generate model Memory manufacturer:string volume:float storage_life:float throughput:float channel_number:integer lifetime:float cost:float --no-test-framework
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 

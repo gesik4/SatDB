@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519073546) do
+ActiveRecord::Schema.define(version: 20150519080636) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,7 +97,10 @@ ActiveRecord::Schema.define(version: 20150519073546) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "mentor_id"
   end
+
+  add_index "polygons", ["mentor_id"], name: "index_polygons_on_mentor_id", using: :btree
 
   create_table "satellites", force: :cascade do |t|
     t.string   "acronym"
@@ -116,10 +119,12 @@ ActiveRecord::Schema.define(version: 20150519073546) do
     t.float    "perigee"
     t.float    "apogee"
     t.float    "period"
+    t.integer  "polygon_id"
   end
 
   add_index "satellites", ["compression_id"], name: "index_satellites_on_compression_id", using: :btree
   add_index "satellites", ["orbit_id"], name: "index_satellites_on_orbit_id", using: :btree
+  add_index "satellites", ["polygon_id"], name: "index_satellites_on_polygon_id", using: :btree
 
   create_table "stardetectors", force: :cascade do |t|
     t.string   "manufacturer"
@@ -141,6 +146,8 @@ ActiveRecord::Schema.define(version: 20150519073546) do
   add_foreign_key "compressions", "mentors"
   add_foreign_key "countries", "mentors"
   add_foreign_key "orbits", "mentors"
+  add_foreign_key "polygons", "mentors"
   add_foreign_key "satellites", "compressions"
   add_foreign_key "satellites", "orbits"
+  add_foreign_key "satellites", "polygons"
 end

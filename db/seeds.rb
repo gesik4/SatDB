@@ -78,6 +78,40 @@ countries = Country.create!([
                                 { name: 'Bolivarian Republic of Venezuela', mentor: mentor },
                                 { name: 'Vietnam', mentor: mentor }
                             ])
+# create polygons
+puts 'Creating polygons'
+polygons = Polygon.create!([
+                               { name: 'Edwards AFB', mentor: mentor },
+                               { name: 'Mojave Air and Space Port', mentor: mentor },
+                               { name: 'Baikonur Cosmodrome', mentor: mentor },
+                               { name: 'Cape Canaveral Air Force Station', mentor: mentor },
+                               { name: 'Kennedy Space Center', mentor: mentor },
+                               { name: 'Jiuquan Satellite Launch Center', mentor: mentor },
+                               { name: 'Vandenberg Air Force Base', mentor: mentor },
+                               { name: 'Wallops Flight Facility', mentor: mentor },
+                               { name: 'Kapustin Yar Cosmodrome', mentor: mentor },
+                               { name: 'Hammaguir French Special Weapons Test Centre', mentor: mentor },
+                               { name: 'Plesetsk Cosmodrome', mentor: mentor },
+                               { name: 'San Marco platform, Broglio Space Centre', mentor: mentor },
+                               { name: 'Woomera Prohibited Area', mentor: mentor },
+                               { name: 'Uchinoura Space Center (Kagoshima)', mentor: mentor },
+                               { name: 'Guiana Space Centre', mentor: mentor },
+                               { name: 'Tanegashima Space Center', mentor: mentor },
+                               { name: 'Satish Dhawan Space Centre', mentor: mentor },
+                               { name: 'Xichang Satellite Launch Center', mentor: mentor },
+                               { name: 'Taiyuan Satellite Launch Center', mentor: mentor },
+                               { name: 'Palmachim Air Force Base', mentor: mentor },
+                               { name: 'Svobodny Cosmodrome', mentor: mentor },
+                               { name: 'Delta class submarine', mentor: mentor },
+                               { name: 'Odyssey mobile platform', mentor: mentor },
+                               { name: 'Kodiak Launch Complex', mentor: mentor },
+                               { name: 'Yasny Cosmodrome (Dombarovsky)', mentor: mentor },
+                               { name: 'Mid-Atlantic Regional Spaceport', mentor: mentor },
+                               { name: 'Omelek, Kwajalein Atoll', mentor: mentor },
+                               { name: 'Semnan', mentor: mentor },
+                               { name: 'Sohae', mentor: mentor },
+                               { name: 'Naro Space Center', mentor: mentor }
+                           ])
 # create agencies
 puts 'Creating agencies'
 agencies = [

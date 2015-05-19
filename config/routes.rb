@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :compressions, only: [:index, :new, :show, :create, :destroy]
   resources :agencies, only: [:index, :new, :show, :create, :destroy]
   resources :testimonials, only: [:index, :show, :create, :destroy]
+  resources :polygons, only: [:index, :show, :create, :destroy]
 end
