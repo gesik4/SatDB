@@ -511,7 +511,7 @@ satellites = [
     },
     {
         acronym: 'Kanopus-V1',
-        full_name: nil,
+        full_name: 'Kanopus-V1',
         orbit: nil,
         apogee: 514.8,
         perigee: 512.4,
@@ -527,7 +527,7 @@ satellites = [
     },
     {
         acronym: 'Resurs-DK1',
-        full_name: nil,
+        full_name: 'Resurs-DK1',
         orbit: nil,
         apogee: 570.8,
         perigee: 568.1,
@@ -543,7 +543,7 @@ satellites = [
     },
     {
         acronym: 'Resurs-P1',
-        full_name: nil,
+        full_name: 'Resurs-P1',
         orbit: nil,
         apogee: 472.0,
         perigee: 468.2,
@@ -559,7 +559,7 @@ satellites = [
     },
     {
         acronym: 'BKA-2',
-        full_name: nil,
+        full_name: 'BKA-2',
         orbit: nil,
         apogee: 515.6,
         perigee: 512.9,
@@ -575,7 +575,7 @@ satellites = [
     },
     {
         acronym: 'Sich-2',
-        full_name: nil,
+        full_name: 'Sich-2',
         orbit: nil,
         apogee: 704.7,
         perigee: 687.2,
@@ -670,8 +670,8 @@ satellites = [
         launch_date: '2008-08-29 07:15:53 UTC'
     },
     {
-        acronym: 'Cartosat-1',
-        full_name: nil,
+        acronym: 'CartoSat-1',
+        full_name: 'CartoSat-1',
         orbit: nil,
         apogee: 626.7,
         perigee: 624.3,
@@ -686,8 +686,8 @@ satellites = [
         launch_date: '2005-05-05 04:45:00 UTC'
     },
     {
-        acronym: 'Cartosat-2AT',
-        full_name: nil,
+        acronym: 'CartoSat-2',
+        full_name: 'CartoSat-2',
         orbit: nil,
         apogee: 642.5,
         perigee: 638.6,
@@ -702,8 +702,8 @@ satellites = [
         launch_date: '2007-01-10 03:53:00 UTC'
     },
     {
-        acronym: 'Cartosat-2B',
-        full_name: nil,
+        acronym: 'CartoSat-2B',
+        full_name: 'CartoSat-2B',
         orbit: nil,
         apogee: 651.1,
         perigee: 630.1,
@@ -718,8 +718,8 @@ satellites = [
         launch_date: '2010-07-12 03:53:00 UTC'
     },
     {
-        acronym: 'Resourcesat-1',
-        full_name: 'Indian Remote-Sensing Satellite-P6',
+        acronym: 'ResourceSat-1',
+        full_name: 'ResourceSat-1',
         orbit: nil,
         apogee: 829.9,
         perigee: 824.0,
@@ -734,8 +734,8 @@ satellites = [
         launch_date: '2003-10-17 04:54:00 UTC'
     },
     {
-        acronym: 'Resourcesat-2',
-        full_name: nil,
+        acronym: 'ResourceSat-2',
+        full_name: 'ResourceSat-2',
         orbit: nil,
         apogee: 829.2,
         perigee: 824.9,
@@ -782,8 +782,8 @@ satellites = [
         launch_date: '2012-05-06 07:10:04 UTC'
     },
     {
-        acronym: 'Kompsat-2',
-        full_name: nil,
+        acronym: 'KompSat-2',
+        full_name: 'Korea Multi-Purpose Satellite - 2',
         orbit: nil,
         apogee: 706.3,
         perigee: 682.2,
@@ -798,8 +798,8 @@ satellites = [
         launch_date: '2006-07-28 07:05:43 UTC'
     },
     {
-        acronym: 'Kompsat-3',
-        full_name: nil,
+        acronym: 'KompSat-3',
+        full_name: 'Korea Multi-Purpose Satellite - 3',
         orbit: nil,
         apogee: 702.7,
         perigee: 689.4,
@@ -815,7 +815,7 @@ satellites = [
     },
     {
         acronym: 'Deimos-2',
-        full_name: nil,
+        full_name: 'Deimos-2',
         orbit: nil,
         apogee: 624.3,
         perigee: 623.1,
@@ -831,7 +831,7 @@ satellites = [
     },
     {
         acronym: 'QuickBird-1',
-        full_name: nil,
+        full_name: 'QuickBird-1',
         orbit: nil,
         apogee: nil,
         perigee: nil,
@@ -846,7 +846,7 @@ satellites = [
     },
     {
         acronym: 'QuickBird-2',
-        full_name: nil,
+        full_name: 'QuickBird-2',
         orbit: nil,
         apogee: nil,
         perigee: nil,
@@ -861,7 +861,7 @@ satellites = [
     },
     {
         acronym: 'WorldView-1',
-        full_name: nil,
+        full_name: 'WorldView-1',
         orbit: nil,
         apogee: 502.4,
         perigee: 495.7,
@@ -877,7 +877,7 @@ satellites = [
     },
     {
         acronym: 'WorldView-2',
-        full_name: nil,
+        full_name: 'WorldView-2',
         orbit: nil,
         apogee: 773.9,
         perigee: 772.0,
@@ -893,7 +893,7 @@ satellites = [
     },
     {
         acronym: 'GeoEye-1',
-        full_name: nil,
+        full_name: 'GeoEye-1',
         orbit: nil,
         apogee: 693.2,
         perigee: 678.1,
@@ -909,7 +909,7 @@ satellites = [
     },
     {
         acronym: 'Ikonos-1',
-        full_name: nil,
+        full_name: 'Ikonos-1',
         orbit: nil,
         apogee: nil,
         perigee: nil,
@@ -924,7 +924,7 @@ satellites = [
     },
     {
         acronym: 'Ikonos-2',
-        full_name: nil,
+        full_name: 'Ikonos-2',
         orbit: nil,
         apogee: 623.3,
         perigee: 610.3,
@@ -940,7 +940,7 @@ satellites = [
     },
     {
         acronym: 'WorldView-4',
-        full_name: nil,
+        full_name: 'WorldView-4',
         orbit: nil,
         apogee: nil,
         perigee: nil,
@@ -955,7 +955,7 @@ satellites = [
     },
     {
         acronym: 'Aqua',
-        full_name: nil,
+        full_name: 'Earth Observation System - Aqua',
         orbit: nil,
         apogee: 710.4,
         perigee: 708.7,
@@ -971,7 +971,7 @@ satellites = [
     },
     {
         acronym: 'EO-1',
-        full_name: 'Earth Observing - 1',
+        full_name: 'New Millennium Program Earth Observing - 1',
         orbit: nil,
         apogee: 694.3,
         perigee: 680.5,
@@ -987,7 +987,7 @@ satellites = [
     },
     {
         acronym: 'Landsat-7',
-        full_name: nil,
+        full_name: 'Landsat-7',
         orbit: nil,
         apogee: 710.4,
         perigee: 709.0,
@@ -1019,7 +1019,7 @@ satellites = [
     },
     {
         acronym: 'Terra',
-        full_name: nil,
+        full_name: 'Earth Observation System - Terra',
         orbit: nil,
         apogee: 710.6,
         perigee: 708.8,
@@ -1035,7 +1035,7 @@ satellites = [
     },
     {
         acronym: 'Landsat-8',
-        full_name: nil,
+        full_name: 'Landsat-8',
         orbit: nil,
         apogee: 710.8,
         perigee: 708.7,
@@ -1051,7 +1051,7 @@ satellites = [
     },
     {
         acronym: 'SkySat-1',
-        full_name: nil,
+        full_name: 'SkySat-1',
         orbit: nil,
         apogee: 596.8,
         perigee: 567.5,
@@ -1067,7 +1067,7 @@ satellites = [
     },
     {
         acronym: 'SkySat-2',
-        full_name: nil,
+        full_name: 'SkySat-2',
         orbit: nil,
         apogee: 639.2,
         perigee: 630.7,
@@ -1083,7 +1083,7 @@ satellites = [
     },
     {
         acronym: 'Pleiades-1A',
-        full_name: nil,
+        full_name: 'Pleiades-1A',
         orbit: nil,
         apogee: 706.0,
         perigee: 703.9,
@@ -1099,7 +1099,7 @@ satellites = [
     },
     {
         acronym: 'Pleiades-1B',
-        full_name: nil,
+        full_name: 'Pleiades-1B',
         orbit: nil,
         apogee: 706.1,
         perigee: 703.9,
@@ -1115,7 +1115,7 @@ satellites = [
     },
     {
         acronym: 'Alos',
-        full_name: nil,
+        full_name: 'Advanced Land Observing Satellite',
         orbit: nil,
         apogee: 695.5,
         perigee: 693.2,
@@ -1131,7 +1131,7 @@ satellites = [
     },
     {
         acronym: 'Alos-3',
-        full_name: nil,
+        full_name: 'Advanced Land Observing Satellite - 3',
         orbit: nil,
         apogee: nil,
         perigee: nil,
@@ -1146,7 +1146,7 @@ satellites = [
     },
     {
         acronym: 'Asnaro',
-        full_name: nil,
+        full_name: 'Advanced Satellite with new system ARchitecure for Observation - 1',
         orbit: nil,
         apogee: 514.7,
         perigee: 512.8,
@@ -1162,7 +1162,7 @@ satellites = [
     },
     {
         acronym: 'Alsat-1',
-        full_name: nil,
+        full_name: 'Algeria Satellite - 1',
         orbit: nil,
         apogee: 677.7,
         perigee: 648.2,
@@ -1178,7 +1178,7 @@ satellites = [
     },
     {
         acronym: 'Beijing-1',
-        full_name: nil,
+        full_name: 'Beijing-1',
         orbit: nil,
         apogee: 708.6,
         perigee: 685.7,
@@ -1193,8 +1193,8 @@ satellites = [
         launch_date: '2005-10-27 6:52:00 UTC'
     },
     {
-        acronym: 'Bilsat-1',
-        full_name: nil,
+        acronym: 'BILSat-1',
+        full_name: 'BILTEN Satellte',
         orbit: nil,
         apogee: 696.1,
         perigee: 678.2,
@@ -1210,7 +1210,7 @@ satellites = [
     },
     {
         acronym: 'Deimos-1',
-        full_name: nil,
+        full_name: 'Deimos-1',
         orbit: nil,
         apogee: 664.4,
         perigee: 663.3,
@@ -1225,8 +1225,8 @@ satellites = [
         launch_date: '2009-07-29 18:46:00 UTC'
     },
     {
-        acronym: 'Nigeriasat-1',
-        full_name: nil,
+        acronym: 'NigeriaSat-1',
+        full_name: 'NigeriaSat-1',
         orbit: nil,
         apogee: 668.7,
         perigee: 598.7,
@@ -1241,8 +1241,8 @@ satellites = [
         launch_date: '2003-09-27 06:12:00 UTC'
     },
     {
-        acronym: 'Nigeriasat-2',
-        full_name: nil,
+        acronym: 'NigeriaSat-2',
+        full_name: 'NigeriaSat-2',
         orbit: nil,
         apogee: 701.1,
         perigee: 687.5,
@@ -1257,8 +1257,8 @@ satellites = [
         launch_date: '2011-08-17 07:12:20 UTC'
     },
     {
-        acronym: 'Nigeriasat-X',
-        full_name: nil,
+        acronym: 'NigeriaSat-X',
+        full_name: 'NigeriaSat-X',
         orbit: nil,
         apogee: 715.4,
         perigee: 696.3,
@@ -1274,7 +1274,7 @@ satellites = [
     },
     {
         acronym: 'UK-DMC',
-        full_name: nil,
+        full_name: 'UK contribution to the Disaster Monitoring Constellation - 1',
         orbit: nil,
         apogee: 686.2,
         perigee: 596.6,
@@ -1290,7 +1290,7 @@ satellites = [
     },
     {
         acronym: 'UK-DMC-2',
-        full_name: nil,
+        full_name: 'UK contribution to the Disaster Monitoring Constellation - 2',
         orbit: nil,
         apogee: 667.0,
         perigee: 664.9,
@@ -1306,7 +1306,7 @@ satellites = [
     },
     {
         acronym: 'Sentinel-2',
-        full_name: nil,
+        full_name: 'Sentinel-2',
         orbit: nil,
         apogee: nil,
         perigee: nil,

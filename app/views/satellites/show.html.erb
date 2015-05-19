@@ -6,7 +6,6 @@
       <th>NORAD ID</th>
       <th>NSSDC ID</th>
       <th>Launch date</th>
-      <th>Inclination, deg</th>
       <th>Dry mass, kg</th>
       <th>Mass at launch, kg</th>
       <th>Power, W</th>
@@ -26,9 +25,6 @@
         <%= @satellite.launch_date.year %> (<%= @satellite.launch_date.hour %>:<%= @satellite.launch_date.min %> UTC)
       </td>
       <td>
-        <%= @satellite.inclination_before_type_cast %>
-      </td>
-      <td>
         <%= @satellite.mass_dry_before_type_cast %>
       </td>
       <td>
@@ -36,6 +32,29 @@
       </td>
       <td>
         <%= @satellite.power_before_type_cast %>
+      </td>
+    </tr>
+  </table>
+  <h3>Orbit</h3>
+  <table>
+    <tr>
+      <th>Apogee</th>
+      <th>Perigee</th>
+      <th>Period</th>
+      <th>Inclination, deg</th>
+    </tr>
+    <tr>
+      <td>
+        <%= @satellite.apogee_before_type_cast %>
+      </td>
+      <td>
+        <%= @satellite.perigee_before_type_cast %>
+      </td>
+      <td>
+        <%= @satellite.period_before_type_cast %>
+      </td>
+      <td>
+        <%= @satellite.inclination_before_type_cast %>
       </td>
     </tr>
   </table>
