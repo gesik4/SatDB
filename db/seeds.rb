@@ -509,7 +509,7 @@ satellites = [
         compression: nil,
         norad_id: '39678',
         nssdc_id: '2014-021A',
-        launch_date: '2014-3-16 16:20:00 UTC'
+        launch_date: '2014-3-16 16:20:00 UTC',
     },
     {
         acronym: 'WorldView-3',

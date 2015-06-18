@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519080636) do
+ActiveRecord::Schema.define(version: 20150609123232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,9 +40,10 @@ ActiveRecord::Schema.define(version: 20150519080636) do
   create_table "countries", force: :cascade do |t|
     t.string   "name"
     t.text     "descriprion"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "mentor_id"
+    t.string   "country_number"
   end
 
   add_index "countries", ["mentor_id"], name: "index_countries_on_mentor_id", using: :btree
@@ -120,11 +121,20 @@ ActiveRecord::Schema.define(version: 20150519080636) do
     t.float    "apogee"
     t.float    "period"
     t.integer  "polygon_id"
+    t.string   "country_name"
   end
 
   add_index "satellites", ["compression_id"], name: "index_satellites_on_compression_id", using: :btree
   add_index "satellites", ["orbit_id"], name: "index_satellites_on_orbit_id", using: :btree
   add_index "satellites", ["polygon_id"], name: "index_satellites_on_polygon_id", using: :btree
+
+  create_table "satellites_countries", id: false, force: :cascade do |t|
+    t.integer "satellite_id"
+    t.integer "country_id"
+  end
+
+  add_index "satellites_countries", ["country_id"], name: "index_satellites_countries_on_country_id", using: :btree
+  add_index "satellites_countries", ["satellite_id"], name: "index_satellites_countries_on_satellite_id", using: :btree
 
   create_table "stardetectors", force: :cascade do |t|
     t.string   "manufacturer"
